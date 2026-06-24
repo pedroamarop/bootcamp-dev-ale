@@ -1,15 +1,20 @@
-const button = document.getElementById('submit')
+const filmes = [
+    "Interstellar",
+    "Spider-Man",
+    "Matrix",
+    "Vingadores",
+    "Pulp Fiction",
+    "Django, Unleashed",
+    "Kill Bill",
+    "Forrest Gump",
+    "Poderoso Chefao",
+    "Seven"
+];
 
-button.addEventListener('click', () =>{
-    let nota = Number(document.getElementById('valor').value);
+const submitButton = document.getElementById('submit');
 
-    if (isNaN(nota) || nota > 10 || nota < 0){
-        console.log("digite uma nota válida")
-    }else if(nota > 8){
-        console.log("Sua nota é excelente!");
-    } else if(nota > 6){
-        console.log("Sua nota é boa!");
-    } else {
-        console.log("Regular")
-    }
+submitButton.addEventListener('click', () => {
+    for (filme of filmes){
+        console.log(filmes)
+    };
 })
